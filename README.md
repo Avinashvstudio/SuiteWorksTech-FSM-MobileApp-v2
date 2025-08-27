@@ -1,8 +1,27 @@
-# Welcome to your Expo app 👋
+# SuiteWorksTech-FSM-MobileApp-v2
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Field Work Service Management Mobile App - React Native/Expo application for managing field service operations, job orders, equipment usage, and technician workflows.
 
-## Get started
+## About
+
+This is a [React Native](https://reactnative.dev/) project built with [Expo](https://expo.dev) for Field Service Management operations. The app provides comprehensive tools for managing field service workflows, including job orders, equipment usage tracking, and technician management.
+
+## Features
+
+- **Job Management**: Create, view, and manage job orders
+- **Equipment Tracking**: Monitor equipment usage and maintenance
+- **Technician Workflow**: Streamline field service operations
+- **Location Services**: Track and manage field locations
+- **Authentication**: Secure login and user management
+
+## Tech Stack
+
+- **Frontend**: React Native with Expo
+- **Navigation**: Expo Router (file-based routing)
+- **State Management**: Custom hooks and global store
+- **Platforms**: iOS and Android
+
+## Get Started
 
 1. Install dependencies
 
@@ -10,41 +29,38 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npm install
    ```
 
-2. Start the app
+2. Start the development server
 
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Run on your preferred platform:
+   - **Android**: Press 'a' in the terminal or scan QR code with Expo Go
+   - **iOS**: Press 'i' in the terminal or scan QR code with Expo Go
+   - **Web**: Press 'w' in the terminal
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+├── app/                    # Main application screens
+│   ├── (auth)/            # Authentication screens
+│   ├── (drawer)/          # Main app screens with drawer navigation
+│   └── _layout.tsx        # Root layout
+├── components/             # Reusable UI components
+├── hooks/                  # Custom React hooks
+├── services/               # API and service layer
+├── store/                  # Global state management
+├── types/                  # TypeScript type definitions
+└── utils/                  # Utility functions
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Development
 
-## Learn more
+This project uses [file-based routing](https://docs.expo.dev/router/introduction) with Expo Router. You can start developing by editing the files inside the **app** directory.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Learn More
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals and advanced topics
+- [React Native documentation](https://reactnative.dev/docs/getting-started): React Native guides and API reference
+- [Expo Router](https://docs.expo.dev/router/introduction): File-based routing for Expo apps
